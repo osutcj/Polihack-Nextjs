@@ -60,7 +60,7 @@ export const teamMembers = [
     name: "Georgiana Teodoritu",
     role: "Co-coordinator",
     image: "",
-    
+    instagram: "https://www.instagram.com/ge0rgiana.t?igsh=MTZncjhwdzczYTN1bA==",
     facebook: "https://www.facebook.com/georgiana.teodoritu/",
   },
 ];
