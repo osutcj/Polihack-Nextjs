@@ -90,9 +90,9 @@ export const editionDetails = {
     dates: "5-7 December 2025",
     location: "Cluj Bussiness Campus, Cloudflight Office",
     stats: [
-      { label: "Participants", value: 69 },
-      { label: "Teams", value: 69 },
-      { label: "Mentors", value: 69 },
+      { label: "Participants", value: 229 },
+      { label: "Teams", value: 42 },
+      { label: "Mentors", value: 14 },
     ],
     winnerCategories: [
       { category: "AppDev", team: "NoAiUsed", image: "/assets/Images/v18App.jpg" },

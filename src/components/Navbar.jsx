@@ -63,7 +63,7 @@ export default function Navbar() {
               </Link>
             </li>
             <li>
-              <a href="https://forms.gle/EQrxtDr8uhcBnKyg9" target="_blank" rel="noopener noreferrer" className="text-white" onClick={closeMenu}>
+              <a href="https://docs.google.com/forms/d/10rcKy6UoWYHVdExtkhyrUYEbvT5QOJBANzy0TxllJOY/edit?usp=drivesdk" target="_blank" rel="noopener noreferrer" className="text-white" onClick={closeMenu}>
                 Register
               </a>
             </li>
