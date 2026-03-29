@@ -1,0 +1,36 @@
+// General
+
+.header {
+  display: contents;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content {
+	background: linear-gradient(45deg, #000000, #1f0000, #5a0000, #5c0000) !important;
+}
+
+// Form
+
+.formContainer {
+  display: flex !important;
+  justify-content: center !important;
+}
+
+.form {
+  margin-top: 100px;
+}
+
+// Mobile
+
+@media screen and (max-width: 768px) { 
+
+  .formContainer {
+    min-height: 100vh !important;
+    height: auto !important;
+  }
+
+  .form {
+    height: 95rem !important;
+  }
+}

@@ -1,0 +1,268 @@
+
+// General layout resets
+
+.header {
+  display: contents;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content {
+  background-color: transparent !important;
+}
+
+.headingHover {
+  color: white !important;
+  font-weight: bold;
+  margin-bottom: 20px;
+  position: relative;
+  margin-left: 12rem;
+}
+
+.headingHover:hover::before {
+  content: "#";
+  position: absolute;
+  left: -2.2rem;
+  top: 0;
+}
+
+// Hero Section
+
+.hero {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: clamp(28rem, 55vw, 46rem);
+  margin-bottom: clamp(2rem, 5vw, 4rem);
+}
+
+.imageFluid {
+  min-height: 68rem;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: opacity(0.6);
+  display: block;
+}
+
+.heroContent {
+  position: absolute;
+  inset: 0;
+  padding: clamp(1.5rem, 4vw, 6rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(0.75rem, 2vw, 1.5rem);
+  text-align: center;
+}
+
+.heading {
+  margin-top: 2rem;
+  font-weight: 700;
+  color: white;
+  letter-spacing: 2px;
+}
+
+.logo {
+  width: clamp(10rem, 25vw, 28rem);
+  max-width: 100%;
+  height: auto;
+  animation: FadeUp 1.5s ease-in-out;
+}
+
+.subHeading {
+  font-size: var(--font-size-subtitle);
+  font-weight: 600;
+  color: white;
+  min-height: 1.5em;
+  margin: 0;
+}
+
+.timer {
+  font-size: 5rem;
+  color: white;
+  font-weight: 500;
+  margin: 0;
+}
+
+@keyframes FadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// Description
+
+.descriptionSection {
+  background-color: transparent !important;
+  margin: 0 auto;
+}
+
+.description {
+  padding: 0rem 12rem;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  background-color: transparent !important;
+  font-size: var(--font-size-body);
+  line-height: 1.65;
+  color: white;
+  margin-bottom: 1.5rem;
+}
+
+// Sponsors
+
+.sponsorsSection {
+  background-color: transparent !important;
+  width: min(1200px, 100%);
+  margin: 0 auto 3rem;
+  padding: clamp(2rem, 5vw, 6rem) clamp(1.5rem, 7vw, 10rem);
+}
+
+.sponsorGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(1rem, 3vw, 2rem);
+  width: 100%;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+  padding: clamp(1rem, 2.5vw, 2.5rem);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+}
+
+.sponsorCard {
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: clamp(1rem, 2vw, 2.5rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 140px;
+  transition: border-color 0.3s ease, transform 0.3s ease, background 0.3s ease;
+}
+
+.sponsorCard:hover,
+.sponsorCard:focus-visible {
+  border-color: #a10000;
+  background: rgba(161, 0, 0, 0.25);
+  transform: translateY(-4px);
+}
+
+.sponsorCard img {
+  max-width: 140px;
+  width: 100%;
+  filter: grayscale(40%) brightness(0.95);
+  transition: filter 0.3s ease;
+}
+
+.sponsorCard:hover img,
+.sponsorCard:focus-visible img {
+  filter: grayscale(0%) brightness(1.15);
+}
+
+// Responsive tweaks
+
+@media screen and (max-width: 1024px) {
+
+  .imageFluid {
+    min-height: 38rem !important;
+  }
+
+  .descriptionSection {
+    padding: none;
+  }
+
+  .headingHover {
+    text-align: left;
+  }
+
+  .headingHover:hover::before {
+    left: -1.5rem;
+  }
+
+  .sponsorGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .imageFluid {
+    min-height: 32rem;
+  }
+
+  .hero {
+    min-height: clamp(24rem, 75vw, 30rem);
+  }
+
+  .heroContent {
+    margin-top: 5rem;
+  }
+
+  .headingHover {
+    padding-left: 5px;
+    text-align: left;
+  }
+
+  .headingHover:hover::before {
+    left: -1.1rem;
+  }
+
+  .descriptionSection,
+  .sponsorsSection {
+    padding: 2.5rem 1.5rem;
+    text-align: center;
+  }
+
+  .description {
+    padding: 0rem 1rem;
+  }
+
+  .timer {
+    font-size: 2.5rem;
+  }
+
+  .sponsorGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  .imageFluid {
+    min-height: 32rem;
+  }
+
+  .heroContent {
+    gap: 0.5rem;
+  }
+
+  .headingHover:hover::before {
+    left: -0.9rem;
+  }
+
+  .headingHover {
+    margin-left: 1rem;
+  }
+
+  .timer {
+    font-size: 1.5rem;
+  }
+
+  .sponsorCard {
+    min-height: 110px;
+    padding: 1.25rem;
+  }
+}

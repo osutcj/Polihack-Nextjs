@@ -1,0 +1,41 @@
+.document-container {
+    padding: 20px;
+    display: flex !important;
+    position: relative;
+}
+
+.document-container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(150, 0, 0, 0.3);
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.document-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: var(--font-size-title);
+    color: white !important;
+    z-index: 2;
+    text-align: center;
+    width: 100%;
+    pointer-events: none;
+}
+
+.image-fluid {
+    width: 100% !important;
+    display: block !important;
+}
+
+.cover-image {
+    filter: brightness(0.5);
+}
+
+.document-link {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+}

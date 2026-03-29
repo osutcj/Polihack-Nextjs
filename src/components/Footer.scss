@@ -1,0 +1,160 @@
+.footer-container {
+    height: auto !important;
+    background: linear-gradient(135deg, rgba(139, 0, 0, 0.9), rgba(56, 0, 0, 0.95));
+    padding: 2rem 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    box-shadow: 0 -10px 40px rgba(0, 0, 0, 0.45);
+}
+
+.footer-content {
+    width: 100%;
+    padding: 0 1rem;
+}
+
+.footer-image {
+    max-width: 12.5rem !important;
+    height: auto !important;
+    margin-bottom: 1.5rem;
+}
+
+.UTCN_Logo {
+    padding: 10px;
+    height: 90px !important;
+    width: auto;
+    max-width: 220px;
+    object-fit: contain;
+}
+
+.OSUT_Logo {
+    padding: 10px;
+    height: 96px !important;
+    width: auto;
+    max-width: 230px;
+    object-fit: contain;
+}
+
+.align-center {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-icon-social svg {
+    height: 25px !important;
+    width: auto !important;
+    color: white !important;
+}
+
+.social-icons-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.text-center {
+    color: white !important;
+}
+
+.left-content {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0 !important;
+}
+
+.right-content {
+    margin: 1rem 0 !important;
+    width: 100%;
+}
+
+.text-bold {
+    font-weight: bold !important;
+}
+
+.contact-info, .contact-section {
+    margin-bottom: 8px;
+}
+
+.hover-image:hover{
+    filter: grayscale(100%) brightness(0.8);
+}
+
+/* Media Queries for Responsive Design */
+@media (min-width: 768px) {
+
+    .mt-sm-5 {
+        margin-top: 0rem !important;
+    }
+
+    .footer-content {
+        padding: 0 2rem;
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+    
+    .left-content {
+        justify-content: flex-start;
+        margin-left: 4rem !important;
+    }
+    
+    .contact-info, .contact-section {
+        text-align: end !important;
+    }
+    
+    .right-content {
+        margin-right: 5rem !important;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .footer-content {
+        padding: 0;
+        margin-left: 10rem;
+        margin-right: 10rem;
+    }
+    
+    .social-icons-container {
+        justify-content: flex-end;
+    }
+    
+    .right-content {
+        margin-right: 10rem !important;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .footer-container {
+        margin-top: 2rem;
+    }
+
+
+    .mt-sm-5 {
+        margin-top: 5rem !important;
+    }
+
+    .align-button {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    .UTCN_Logo,
+    .OSUT_Logo {
+        padding-left: 30px;
+        height: 70px !important;
+        max-width: 160px;
+    }
+    
+    .right-content {
+        text-align: center;
+    }
+    
+    .contact-info, .contact-section {
+        text-align: center !important;
+    }
+    
+    .footer-image {
+        margin: 0 auto 1.5rem;
+    }
+}

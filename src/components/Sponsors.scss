@@ -1,0 +1,94 @@
+// Sponsors
+
+.sponsorsSection {
+  background-color: transparent !important;
+  padding: 0rem 12rem;
+  padding-top: 5rem;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.sponsors {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  margin-top: 2rem;
+}
+
+.sponsorSlider {
+  display: flex;
+  animation: slideLeft 30s linear infinite;
+  width: max-content;
+}
+
+.sponsorItem {
+  flex: 0 0 auto;
+  margin: 0 2rem;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sponsorItem img {
+  max-height: 100%;
+  max-width: 10rem;
+  filter: grayscale(80%) brightness(0.9);
+  transition: filter 0.3s ease;
+}
+
+.sponsorItem img:hover {
+  filter: grayscale(0%) brightness(1.2);
+}
+
+.sponsorIntro {
+  color: rgba(255, 255, 255, 0.75) !important;
+  margin-bottom: 1.5rem;
+  font-size: var(--font-size-body);
+}
+
+.sponsorTitle {
+  color: white !important;
+  font-weight: bold;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.sponsorTitle:hover::before {
+  content: "#";
+  position: absolute;
+  left: -2.2rem;
+  top: 0;
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 768px) {
+  .sponsorsSection {
+    padding: 0rem 2rem;
+    padding-top: 3rem;
+  }
+
+  .sponsorItem {
+    margin: 0 1rem;
+    height: 150px;
+  }
+
+  .sponsorItem img {
+    max-width: 7rem;
+  }
+
+  .sponsorTitle:hover::before {
+    left: -1.5rem;
+  }
+}

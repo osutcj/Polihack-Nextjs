@@ -1,0 +1,54 @@
+.image-container {
+    width: 15rem;
+    height: 15rem;
+    margin-bottom: 1rem;
+}
+
+.image-circle {
+    margin-left: auto;
+    margin-right: auto;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+}
+
+.image-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card {
+    background-color: rgb(19, 19, 19, 0) !important;
+}
+
+.center {
+    display: flex !important;
+    justify-content: center !important;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card-text {
+    font-size: var(--font-size-body);
+}
+
+.team-card {
+    border-radius: 16px;
+}
+
+.team-instagram svg {
+    width: 24px !important;
+    height: 24px !important;
+    color: white !important;
+}
+
+.team-facebook svg {
+    margin-left: 12px;
+    width: 24px !important;
+    height: 24px !important;
+    color: white !important;
+}

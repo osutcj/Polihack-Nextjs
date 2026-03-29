@@ -1,0 +1,32 @@
+:root {
+    --carousel-distance: 2rem;
+}
+
+.carousel-image {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 15px;
+    width: auto !important;
+    max-width: 80%;
+    max-height: 90% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.carousel-caption {
+    bottom: calc(var(--carousel-distance) + 1rem) !important;
+}
+
+.carousel-indicators {
+    bottom: calc(var(--carousel-distance)) !important;
+}
+
+// Mobile Screen
+@media screen and (max-width: 768px) {
+    .carousel-image {
+        max-width: 100% !important;
+        max-height: 15rem !important;
+        margin-left: 0rem !important;
+        margin-right: 0rem !important;
+    }
+}

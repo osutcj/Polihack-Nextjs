@@ -1,0 +1,192 @@
+// General
+
+.header {
+  display: contents;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content {
+  background-color: transparent !important;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading {
+  position: absolute;
+  top: calc(var(--top-spaceing) + 3.5rem);
+  font-size: var(--font-size-title);
+  font-weight: bold;
+  color: white !important;
+}
+
+.headingHover {
+  color: white !important;
+  font-weight: bold;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.headingHover:hover::before {
+  content: "#";
+  position: absolute;
+  left: -2.2rem;
+  top: 0;
+}
+
+// Judge
+
+.judgesSection {
+  background-color: transparent !important;
+  padding: 0rem 12rem;
+  padding-top: 7rem;
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+
+// Mentors
+
+.mentorsSection {
+  background-color: transparent !important;
+  padding: 0rem 12rem;
+  padding-top: 2rem;
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+
+// Volunteers
+
+.volunteersSection {
+  background-color: transparent !important;
+  padding: 0rem 12rem;
+  padding-top: 2rem;
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+
+// Documents
+
+.documentsSection {
+  margin-top: 5rem; // TODO: remove this line
+
+  background-color: transparent !important;
+  padding: 0rem 12rem;
+  padding-top: 2rem;
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+
+// Sponsors
+
+.sponsorsSection {
+  background-color: transparent !important;
+  padding: 0rem 12rem;
+  padding-top: 5rem;
+  margin-bottom: 5rem;
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+
+.sponsors {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  margin-top: 2rem;
+}
+
+.sponsorSlider {
+  display: flex;
+  animation: slideLeft 30s linear infinite;
+  width: max-content;
+}
+
+.sponsorItem {
+  flex: 0 0 auto;
+  margin: 0 2rem;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sponsorItem img {
+  max-height: 100%;
+  max-width: 200px;
+  filter: grayscale(100%) brightness(1.5);
+  transition: filter 0.3s ease;
+}
+
+.sponsorItem img:hover {
+  filter: grayscale(0%) brightness(1);
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+// Media Queries
+@media (max-width: 768px) {
+
+  .heading {
+    position: absolute !important;
+    top: 6rem !important;
+  }
+
+  .subHeading {
+    max-width: 320px;
+    text-align: center;
+  }
+
+  .headingHover:hover::before {
+    content: "#";
+    position: absolute;
+    left: -1.3rem;
+    top: 0;
+  }
+
+  .imageFluid {
+    width: 200%;
+    height: auto;
+  }
+
+  .logo {
+    max-width: 172px;
+  }
+
+  .headingHover {
+    margin-bottom: 10px;
+  }
+
+  .judgesSection,
+  .mentorsSection,
+  .volunteersSection,
+  .documentsSection,
+  .sponsorsSection {
+    padding: 0rem 2rem;
+    padding-bottom: 0rem;
+  }
+
+  .judgesSection {
+    padding-top: 7rem;
+  }
+
+  .sponsorItem img {
+    max-height: 80%;
+    max-width: 150px;
+  }
+}

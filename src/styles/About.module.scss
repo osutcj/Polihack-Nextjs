@@ -1,0 +1,181 @@
+// General
+
+.header {
+  display: contents;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content {
+  background-color: transparent !important;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading {
+  position: absolute;
+  top: calc(var(--top-spaceing) + 3.5rem);
+  font-size: var(--font-size-title);
+  font-weight: bold;
+  color: white !important;
+}
+
+.headingHover {
+  color: white !important;
+  font-weight: bold;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.headingHover:hover::before {
+  content: "#";
+  position: absolute;
+  left: -2.2rem;
+  top: 0;
+}
+
+// Text Section
+
+.imageFluid {
+  filter: opacity(0.6);
+  width: 100%;
+  height: auto;
+}
+
+.textSection {
+  background-color: transparent !important;
+  padding: 0rem 12rem;
+  padding-top: 5rem;
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  text-align: justify;
+  color: white !important;
+  font-size: var(--font-size-body);
+}
+
+// Categories
+
+.categoriesSection {
+  background-color: transparent !important;
+  padding: 0rem 12rem;
+  padding-top: 2rem;
+  display: block;
+  justify-content: center;
+  align-items: justify;
+}
+
+// Network
+
+.networkingSection {
+  background-color: transparent !important;
+  padding: 0rem 12rem;
+  padding-top: 2rem;
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+
+// Team
+
+.teamSection {
+  background-color: transparent !important;
+  padding: 0rem 12rem;
+  padding-top: 2rem;
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+
+.teamRow {
+  display: flex;
+  padding: 20px;
+  padding-left: 0px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 990px) { 
+
+  .headingHover:hover::before {
+    content: "#";
+    position: absolute;
+    left: -1.3rem;
+    top: 0;
+  }
+
+  .textSection, .categoriesSection, .networkingSection, .teamSection {
+    margin-top: 6rem;
+    padding: 0rem 2rem;
+  }   
+
+  .categoriesSection, .networkingSection, .teamSection {
+    margin-top: 2.5rem !important;
+  }
+}
+
+/* Between 768px and 990px — TEAM stacked vertically */
+@media screen and (min-width: 768px) and (max-width: 990px) {
+
+  /* TEAM SECTION: force 1 per row */
+  .teamRow {
+    display: flex;
+    flex-direction: column;  /* vertical stacking */
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+  }
+
+  .teamRow > * {
+    width: 100% !important;  /* full width team cards */
+  }
+}
+
+@media screen and (min-width: 990px) and (max-width: 1350px) {
+
+  /* Reduce paddings like on mobile */
+  .textSection, 
+  .categoriesSection, 
+  .networkingSection, 
+  .teamSection {
+    margin-top: 5rem;
+    padding: 0rem 4rem;
+  }
+
+  .categoriesSection, 
+  .networkingSection, 
+  .teamSection {
+    margin-top: 2.5rem !important;
+  }
+
+  /* Adjust hover hashtag spacing */
+  .headingHover:hover::before {
+    content: "#";
+    position: absolute;
+    left: -1.8rem;
+    top: 0;
+  }
+
+  /* TEAM SECTION: stack items 1 per row */
+  .teamRow {
+    display: flex;
+    flex-direction: column;   /* force vertical stacking */
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;                /* spacing between members */
+    width: 100%;
+  }
+
+  .teamRow > * {
+    width: 100% !important;   /* ensure each team card spans full width */
+  }
+}
+

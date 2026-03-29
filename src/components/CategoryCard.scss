@@ -1,0 +1,45 @@
+:root {
+    --card-first-color: rgb(20, 0, 0);
+    --card-second-color: #800000;
+}
+
+.card {
+    position: relative;
+    border: 2px solid transparent;
+    box-shadow: 0 0 0 transparent;
+    transition: all 0.3s ease;
+  }
+  
+  .card:hover {
+    border: 2px solid var(--card-first-color);
+    box-shadow: 
+      0 0 5px var(--card-first-color),
+      0 0 15px var(--card-first-color),
+      0 0 25px var(--card-first-color);
+    animation: neonPulse 1.5s infinite;
+  }
+  
+  @keyframes neonPulse {
+    0% {
+      border-color: var(--card-first-color);
+      box-shadow: 
+        0 0 5px var(--card-first-color),
+        0 0 15px var(--card-first-color),
+        0 0 25px var(--card-first-color);
+    }
+    50% {
+      border-color: var(--card-second-color);
+      box-shadow: 
+        0 0 10px var(--card-second-color),
+        0 0 20px var(--card-second-color),
+        0 0 30px var(--card-second-color);
+    }
+    100% {
+      border-color: var(--card-first-color);
+      box-shadow: 
+        0 0 5px var(--card-first-color),
+        0 0 15px var(--card-first-color),
+        0 0 25px var(--card-first-color);
+    }
+  }
+  
