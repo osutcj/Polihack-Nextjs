@@ -17,7 +17,7 @@ export const teamMembers = [
   {
     name: "Andreea Arimia",
     role: "BC Responsible",
-    image: "/assets/Team/ArimiaAndreea.jpg",
+    image: "/assets/Team/ArimiaAndreea.jpeg",
     instagram: "https://www.instagram.com/andreeaa_stefaniaa/",
     facebook: "https://www.facebook.com/andreea.arimia",
   },
@@ -52,14 +52,14 @@ export const teamMembers = [
   {
     name: "Ioana Beldean",
     role: "Co-coordinator",
-    image: "/assets/Team/BeldeanIoana.jpg",
+    image: "/assets/Team/BeldeanIoana.jpeg",
     instagram: "https://www.instagram.com/beldeaan/",
     facebook: "https://www.facebook.com/beldean.ioana.12",
   },
   {
     name: "Georgiana Teodoritu",
     role: "Co-coordinator",
-    image: "/assets/Team/TeodorituGeorgiana.jpg",
+    image: "/assets/Team/TeodorituGeorgiana.jpeg",
     instagram: "https://www.instagram.com/ge0rgiana.t?igsh=MTZncjhwdzczYTN1bA==",
     facebook: "https://www.facebook.com/georgiana.teodoritu/",
   },
