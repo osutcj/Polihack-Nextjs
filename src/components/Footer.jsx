@@ -13,7 +13,7 @@ export default function Footer() {
     <div className="footer-container">
       <div className="footer-content">
         {/* Top Content */}
-        <div className="row w-100">
+        <div className="row">
           <div className="col-6 col-lg-2 col-sm-6 d-flex justify-content-center">
             {/* UTCN */}
             <a
@@ -102,7 +102,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom Content */}
-        <div className="row w-100 mt-4">
+        <div className="row mt-4">
           {/* Left Content */}
           <div className="col-12 col-md-3 d-flex justify-content-center">
             <div className="left-content hover-image">
@@ -114,7 +114,7 @@ export default function Footer() {
                 }}
               >
                 <img
-                  className="img-fluid footer-image align-button"
+                  className="img-fluid footer-image align-center"
                   src="/assets/LogoText.png"
                   alt="Logo"
                 />
@@ -123,7 +123,7 @@ export default function Footer() {
           </div>
 
           {/* Right Content */}
-          <div className="col-12 col-md-8 d-flex justify-content-md-end">
+          <div className="col-12 col-md-8 d-flex justify-content-center">
             <div className="right-content">
               <h3 className="text-white contact-section text-bold">
                 Contact Info

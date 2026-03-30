@@ -95,11 +95,9 @@
 }
 
 .teamRow {
-  display: flex;
   padding: 20px;
-  padding-left: 0px;
-  width: 100%;
-  justify-content: space-between;
+  width: auto;
+  justify-content: center;
 }
 
 @media screen and (max-width: 990px) { 
@@ -137,7 +135,7 @@
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    width: 100%;
+    width: auto;
   }
 
   .teamRow > * {
@@ -177,7 +175,7 @@
     justify-content: center;
     align-items: center;
     gap: 2rem;                /* spacing between members */
-    width: 100%;
+    width: auto;
   }
 
   .teamRow > * {

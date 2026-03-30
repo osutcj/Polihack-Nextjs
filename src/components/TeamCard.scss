@@ -27,9 +27,12 @@
 
 .center {
     display: flex !important;
+    flex-direction: column !important;
     justify-content: center !important;
+    align-items: center !important;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
 }
 
 .card-text {
@@ -47,8 +50,34 @@
 }
 
 .team-facebook svg {
-    margin-left: 12px;
+    margin-left: 0;
     width: 24px !important;
     height: 24px !important;
     color: white !important;
+}
+
+@media (max-width: 767px) {
+    .team-card {
+        width: 90% !important;
+        max-width: 90% !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .team-card .image-circle {
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .team-card .card-body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .team-card .card-title,
+    .team-card .card-text {
+        text-align: center;
+    }
 }

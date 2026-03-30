@@ -10,10 +10,10 @@ export default function TeamCard({ name, role, image, instagram, facebook }) {
           <div className="placeholder-avatar" style={{ width: '100%', height: '100%', backgroundColor: '#444', borderRadius: '50%' }}></div>
         )}
       </div>
-      <div className="card-body">
+      <div className="card-body d-flex flex-column align-items-center text-center w-100">
         <h3 className="card-title text-center mt-2">{name}</h3>
         <p className="card-text text-center">{role}</p>
-        <div className="d-flex justify-content-center">
+        <div className="d-flex justify-content-center align-items-center gap-3 w-100 mt-2">
           <a href={instagram} target="_blank" rel="noopener noreferrer" className="team-instagram">
             <InstagramOutlined />
           </a>
