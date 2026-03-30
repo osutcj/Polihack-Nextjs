@@ -104,16 +104,22 @@
 
 @media screen and (max-width: 990px) { 
 
+  .headingHover {
+    text-align: center;
+  }
+
   .headingHover:hover::before {
-    content: "#";
-    position: absolute;
-    left: -1.3rem;
-    top: 0;
+    display: none;
+  }
+
+  .text {
+    text-align: center;
   }
 
   .textSection, .categoriesSection, .networkingSection, .teamSection {
     margin-top: 6rem;
     padding: 0rem 2rem;
+    text-align: center;
   }   
 
   .categoriesSection, .networkingSection, .teamSection {

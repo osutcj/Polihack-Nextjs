@@ -153,10 +153,7 @@
   }
 
   .headingHover:hover::before {
-    content: "#";
-    position: absolute;
-    left: -1.3rem;
-    top: 0;
+    display: none;
   }
 
   .imageFluid {
@@ -169,7 +166,8 @@
   }
 
   .headingHover {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    text-align: center;
   }
 
   .judgesSection,
@@ -179,6 +177,7 @@
   .sponsorsSection {
     padding: 0rem 2rem;
     padding-bottom: 0rem;
+    text-align: center;
   }
 
   .judgesSection {

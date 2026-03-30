@@ -212,12 +212,12 @@
   }
 
   .headingHover {
-    padding-left: 5px;
-    text-align: left;
+    padding-left: 0;
+    text-align: center;
   }
 
   .headingHover:hover::before {
-    left: -1.1rem;
+    display: none;
   }
 
   .descriptionSection,

@@ -353,11 +353,12 @@
     padding: 0rem 2rem;
   }
 
+.headingHover {
+    text-align: center;
+  }
+
   .headingHover:hover::before {
-    content: "#";
-    position: absolute;
-    left: -1.3rem;
-    top: 0;
+    display: none;
   }
 
   .typewriter h1 {
