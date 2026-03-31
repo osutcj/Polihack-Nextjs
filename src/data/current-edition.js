@@ -69,6 +69,6 @@ export const volunteersObjects = [
 export const currentEditionDocuments = {
   bannerImage: "/assets/DocumentBanner.jpg",
   regulationsLink: "/assets/Documents/Regulament Participanți - v.19.pdf",
-  acordLink: "/assets/Documents/Acord Parental Polihack v.19.pdf",
+  acordLink: "/assets/Documents/Acord Parental PoliHack v.19.pdf",
   programLink: "https://drive.google.com/file/d/1wqj7VHUeTztDJjUdvJdGxabbkIwPVLq6/view?usp=sharing",
 };
