@@ -99,7 +99,7 @@ export const editionDetails = {
       { category: "Cybersecurity", team: "Segmentation Faults", image: "/assets/Images/v18Cyber.jpg" },
       { category: "Embedded", team: "Liceul De Pescuit Sportiv Iernut", image: "/assets/Images/v18Embedded.jpg" },
       { category: "Web", team: "Ultimii 5 Neuroni", image: "/assets/Images/v18Web.jpg" },
-      { category: "Junior", team: "MOROMEȚII", image: "/assets/Images/v18Junior.jpg" },
+      { category: "Junior", team: "CaffeineOverflow", image: "/assets/Images/v18Junior.jpg" },
     ],
   },
 };
