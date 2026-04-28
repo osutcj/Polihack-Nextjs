@@ -7,7 +7,7 @@ const Loading = ({ isLoading }) => {
         <div className="hud-circle"></div>
         <div className="hud-circle hud-circle-2"></div>
         <div className="logo-container">
-          <img src="/assets/Logos/LogoRed.png" alt="PoliHack Logo" className="logo" />
+          <img src="/assets/Logos/LogoRed.webp" alt="PoliHack Logo" className="logo" />
         </div>
       </div>
     </div>

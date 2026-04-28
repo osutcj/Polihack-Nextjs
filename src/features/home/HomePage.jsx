@@ -52,7 +52,7 @@ export default function HomePage() {
           <img className={styles.imageFluid} src="/assets/MainBanner.gif" alt="Main Banner" />
           <div className={styles.heroContent}>
             <h1 className={styles.heading}>#Engineering the future!</h1>
-            <img className={styles.logo} src="/assets/Logos/LogoWhite.png" alt="Logo PoliHack" />
+            <img className={styles.logo} src="/assets/Logos/LogoWhite.webp" alt="Logo PoliHack" />
             <h1 className={styles.heading}>Hackathon starts in:</h1>
             <p className={styles.timer} id="timer" role="timer" aria-live="polite" suppressHydrationWarning>{countdown}</p>
           </div>

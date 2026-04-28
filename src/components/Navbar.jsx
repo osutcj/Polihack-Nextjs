@@ -30,7 +30,7 @@ export default function Navbar() {
     <nav className={`navbar ${navBackground ? "scrolled" : ""} ${isMenuOpen ? "menu-open" : ""}`}>
       <div className="container">
         <Link href="/" prefetch className="logo" onClick={closeMenu}>
-          <img src="/assets/Logos/LogoWhite.png" alt="Logo" />
+          <img src="/assets/Logos/LogoWhite.webp" alt="Logo" />
         </Link>
         <Link href="/" prefetch className="navbar-brand" onClick={closeMenu}>
           PoliHack

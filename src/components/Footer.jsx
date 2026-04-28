@@ -24,7 +24,7 @@ export default function Footer() {
             >
               <img
                 className="align-center UTCN_Logo"
-                src="/assets/Logos/UTCNWhite.png"
+                src="/assets/Logos/UTCNWhite.webp"
                 alt="UTCN Logo"
               />
             </a>
@@ -39,7 +39,7 @@ export default function Footer() {
             >
               <img
                 className="align-center OSUT_Logo"
-                src="/assets/Logos/OSUTWhite.png"
+                src="/assets/Logos/OSUTWhite.webp"
                 alt="OSUT Logo"
               />
             </a>
@@ -115,7 +115,7 @@ export default function Footer() {
               >
                 <img
                   className="img-fluid footer-image align-center"
-                  src="/assets/LogoText.png"
+                  src="/assets/LogoText.webp"
                   alt="Logo"
                 />
               </a>

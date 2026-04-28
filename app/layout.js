@@ -6,7 +6,7 @@ export const metadata = {
   title: "PoliHack",
   description: "PoliHack official website",
   icons: {
-    icon: "/favicon.png",
+    icon: "/favicon.webp",
   },
 };
 
